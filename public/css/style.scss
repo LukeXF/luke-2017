@@ -3,6 +3,11 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
+h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	text-align: center;
+}
+
 .navbar {
 	background-color: white;
 	margin-bottom: 0;
@@ -44,11 +49,17 @@ body {
 
 .bg-type {
 	background: white;
+	min-height: 10px;
 	@extend .shadow;
 }
 
 .bg-grey {
 	padding: 30px 0;
+}
+
+.bg-white {
+	padding: 30px 0;
+	background: white;
 }
 
 .header {
@@ -155,5 +166,19 @@ body {
 		background-image: -moz-linear-gradient(left, tan 0%, #beb1a6 100%), -moz-linear-gradient(left, tan 0%, #beb1a6 100%);
 		background-image: -o-linear-gradient(left, tan 0%, #beb1a6 100%), -o-linear-gradient(left, tan 0%, #beb1a6 100%);
 		background-image: linear-gradient(to right, tan 0%, #beb1a6 100%), linear-gradient(to right, tan 0%, #beb1a6 100%);
+	}
+}
+
+.how-i-got-here {
+	.col-md-2 {
+		width: 20%;
+
+		img {
+			width: 100%;
+			max-width: 125px;
+			border-radius: 100px;
+			border: 5px solid #c2c2c2;
+			margin: auto;
+		}
 	}
 }
