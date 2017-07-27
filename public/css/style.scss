@@ -54,11 +54,11 @@ h2, h3, h4, h5, h6 {
 }
 
 .bg-grey {
-	padding: 30px 0;
+	padding: 40px 0;
 }
 
 .bg-white {
-	padding: 30px 0;
+	padding: 40px 0;
 	background: white;
 }
 
@@ -81,7 +81,7 @@ h2, h3, h4, h5, h6 {
 
 	.header-small {
 		background-color: white;
-		margin: 10px auto;
+		margin: 10px auto 30px;
 		@extend .shadow;
 
 		p {
@@ -90,12 +90,15 @@ h2, h3, h4, h5, h6 {
 			letter-spacing: 4px;
 			font-size: 11.5px;
 			padding: 6px 10px 6px 22px;
-			background: -webkit-linear-gradient(left, tan, #beb1a6);
-			background: -o-linear-gradient(right, tan, #beb1a6);
-			background: -moz-linear-gradient(right, tan, #beb1a6);
-			background: linear-gradient(left, tan, #beb1a6);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
+			@extend .background-text;
+		}
+	}
+
+	&.header-thin {
+		h1 {
+			font-size: 27px;
+			padding: 20px 4px;
+			margin: -15px auto 15px;
 		}
 	}
 }
@@ -128,6 +131,15 @@ h2, h3, h4, h5, h6 {
 	-webkit-box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.1);
+}
+
+.background-text {
+	background: -webkit-linear-gradient(left, tan, #beb1a6);
+	background: -o-linear-gradient(right, tan, #beb1a6);
+	background: -moz-linear-gradient(right, tan, #beb1a6);
+	background: linear-gradient(left, tan, #beb1a6);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .btn-luke {
@@ -175,10 +187,96 @@ h2, h3, h4, h5, h6 {
 
 		img {
 			width: 100%;
-			max-width: 125px;
+			max-width: 100px;
 			border-radius: 100px;
 			border: 5px solid #c2c2c2;
 			margin: auto;
 		}
+
+		h4 {
+			font-weight: bold;
+			font-size: 17px;
+			margin: 10px auto 5px;
+		}
+		h6 {
+			margin: 0 auto 5px;
+			padding-bottom: 9px;
+			border-bottom: 1px solid #eee;
+			color: #a9a9a9;
+		}
+		p {
+			text-align: center;
+		}
 	}
 }
+
+.title {
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+
+.page-intro {
+	.title {
+		font-size: 40px;
+	}
+
+	.sub-title {
+		text-align: center;
+		background-color: white;
+		margin: 10px auto 20px;
+		display: table;
+		@extend .shadow;
+
+		p {
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			font-size: 11.5px;
+			padding: 0 30px;
+			display: inline;
+			line-height: 27px;
+
+			@extend .background-text;
+		}
+	}
+
+	p.big {
+		text-align: center;
+		font-size: 18px;
+		font-weight: 300;
+		margin-bottom: 30px;
+	}
+}
+
+.my-skillset {
+	> div {
+		img {
+			width: 100%;
+			max-width: 165px;
+			border-radius: 20px;
+			border: 5px solid #f7f7f7;
+			margin: auto;
+
+			margin-bottom: 25px;
+		}
+
+		h4 {
+			font-weight: bold;
+			font-size: 17px;
+			margin: 25px auto 5px;
+			text-align: left;
+		}
+		h6 {
+			margin: 0 auto 5px;
+			padding-bottom: 9px;
+			border-bottom: 1px solid #eee;
+			color: #a9a9a9;
+			text-align: left;
+		}
+		p {
+		}
+	}
+}
+
+
