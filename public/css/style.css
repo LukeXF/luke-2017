@@ -6,6 +6,12 @@ h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   text-align: center; }
 
+a {
+  color: tan; }
+  a:hover {
+    color: #d29600;
+    text-decoration: none; }
+
 .navbar {
   background-color: white;
   margin-bottom: 0; }
@@ -88,6 +94,13 @@ h2, h3, h4, h5, h6 {
     text-align: center;
     font-size: 17px;
     font-weight: 300; }
+
+.animate, a {
+  -webkit-transition: all 0.3s !important;
+  -moz-transition: all 0.3s !important;
+  -ms-transition: all 0.3s !important;
+  -o-transition: all 0.3s !important;
+  transition: all 0.3s !important; }
 
 .shadow, .bg-type, .header h1, .header .header-small, .tile, .page-intro .sub-title {
   -webkit-box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.1);
@@ -224,5 +237,28 @@ h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #eee;
   color: #a9a9a9;
   text-align: left; }
+
+.costs .col-md-4 .stars {
+  text-align: center; }
+
+.costs .col-md-4 img {
+  width: 100%;
+  border-radius: 5px;
+  border: 5px solid #c2c2c2;
+  margin: auto; }
+
+.costs .col-md-4 h4 {
+  font-weight: bold;
+  font-size: 17px;
+  margin: 10px auto 5px; }
+
+.costs .col-md-4 h6 {
+  margin: 0 auto 5px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #eee;
+  color: #a9a9a9; }
+
+.costs .col-md-4 p {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

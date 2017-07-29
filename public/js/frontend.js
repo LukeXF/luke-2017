@@ -6,7 +6,7 @@ $(document).ready(function () {
 		$('.navbar-nav li').removeClass('active');
 		$('#' + page.toLowerCase()).addClass('active');
 	} else {
-		console.error('  EMPTY');
+		$('#home').addClass('active');
 
 	}
 

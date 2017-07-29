@@ -8,6 +8,16 @@ h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
+a {
+	color: tan;
+	@extend .animate;
+
+	&:hover {
+		color: #d29600;
+		text-decoration: none;
+	}
+}
+
 .navbar {
 	background-color: white;
 	margin-bottom: 0;
@@ -132,6 +142,14 @@ h2, h3, h4, h5, h6 {
 			font-weight: 300;
 		}
 	}
+}
+
+.animate {
+	-webkit-transition: all 0.3s !important;
+	-moz-transition: all 0.3s !important;
+	-ms-transition: all 0.3s !important;
+	-o-transition: all 0.3s !important;
+	transition: all 0.3s !important;
 }
 
 .shadow {
@@ -314,4 +332,32 @@ h2, h3, h4, h5, h6 {
 	}
 }
 
+.costs {
+	.col-md-4 {
 
+		.stars {
+			text-align: center;
+		}
+		img {
+			width: 100%;
+			border-radius: 5px;
+			border: 5px solid #c2c2c2;
+			margin: auto;
+		}
+
+		h4 {
+			font-weight: bold;
+			font-size: 17px;
+			margin: 10px auto 5px;
+		}
+		h6 {
+			margin: 0 auto 5px;
+			padding-bottom: 9px;
+			border-bottom: 1px solid #eee;
+			color: #a9a9a9;
+		}
+		p {
+			text-align: center;
+		}
+	}
+}
