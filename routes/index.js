@@ -10,6 +10,10 @@ router.get('/about', function (req, res) {
 	res.render('about', {title: 'About'});
 });
 
+router.get('/portfolio', function (req, res) {
+	res.render('portfolio', {title: 'Portfolio'});
+});
+
 router.get('/pricing', function (req, res) {
 	res.render('pricing', {title: 'Pricing'});
 });
