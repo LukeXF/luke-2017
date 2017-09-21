@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var sites = require('../sites.json');
 
 /* GET home page. */
 router.get('/', function (req, res) {
@@ -11,7 +12,7 @@ router.get('/about', function (req, res) {
 });
 
 router.get('/portfolio', function (req, res) {
-	res.render('portfolio', {title: 'Portfolio'});
+	res.render('portfolio', {title: 'Portfolio', sites: sites});
 });
 
 router.get('/pricing', function (req, res) {

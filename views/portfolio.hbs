@@ -1,22 +1,55 @@
 <div class="bg-grey">
-	<div class="row page-intro">
-		<div class="col-md-8 col-md-offset-2">
-			<h1 class="title">Portfolio</h1>
-			<div class="sub-title">
-				<p>A collection of my past work</p>
+	<div class="container">
+		<div class="row page-intro">
+			<div class="col-md-8 col-md-offset-2">
+				<h1 class="title">Portfolio</h1>
+				<div class="sub-title">
+					<p>A collection of my past work</p>
+				</div>
+				<p class="big">
+					Big or small and in any industry - your website should stand out from the rest. I build
+					professional,
+					modern and responsive websites which pays for itself with the increase traffic and conversion rates.
+					Whether you have an existing website or you're looking to bring your business online, I can guide
+					you
+					through every step of the way.
+				</p>
 			</div>
-			<p class="big">
-				Big or small and in any industry - your website should stand out from the rest. I build professional,
-				modern and responsive websites which pays for itself with the increase traffic and conversion rates.
-				Whether you have an existing website or you're looking to bring your business online, I can guide you
-				through every step of the way.
-			</p>
 		</div>
 	</div>
 </div>
 
 
+<style>
+		{{#each sites}}
+		.bg-{{this.img}} {
+			background: url(images/websites/{{this.img}}.jpg) center #585858;
+			background-size: 105%;
+		}
+
+		.fg-{{this.img}} {
+			background: url(images/websites/{{this.img}}.png) center;
+			background-size: cover;
+		}
+		{{/each}}
+</style>
+
 <div class="bg-white">
 	<div class="container">
+		<div class="row">
+
+			{{#each sites}}
+				<div class="col-md-6">
+					<div class="tile website bg-{{this.img}}">
+						<div class="website-fg fg-{{this.img}}">
+						</div>
+						<div class="tile-title">
+							<p> {{this.name}} </p>
+						</div>
+					</div>
+				</div>
+			{{/each}}
+
+		</div>
 	</div>
 </div>

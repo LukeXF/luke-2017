@@ -95,7 +95,7 @@ a {
     font-size: 17px;
     font-weight: 300; }
 
-.animate, a {
+.animate, a, .website, .website .website-fg {
   -webkit-transition: all 0.3s !important;
   -moz-transition: all 0.3s !important;
   -ms-transition: all 0.3s !important;
@@ -293,5 +293,47 @@ a {
     max-width: 100%;
     min-width: 100%;
     max-height: 200px; }
+
+.website {
+  position: relative;
+  min-height: 200px;
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 40px; }
+  .website .website-fg {
+    min-width: 100%;
+    min-height: 310px;
+    padding: 20px; }
+  .website:hover {
+    background-size: 100%; }
+    .website:hover .website-fg {
+      transform: scale(1.05); }
+  .website .col-md-6 .website {
+    min-height: 310px; }
+  .website .tile-title {
+    text-align: center;
+    background-color: white;
+    margin: 10px auto 20px;
+    display: table;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    -webkit-box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.1); }
+    .website .tile-title p {
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 11.5px;
+      padding: 0 30px;
+      display: inline;
+      line-height: 27px;
+      background: -webkit-linear-gradient(left, tan, #beb1a6);
+      background: -o-linear-gradient(right, tan, #beb1a6);
+      background: -moz-linear-gradient(right, tan, #beb1a6);
+      background: linear-gradient(left, tan, #beb1a6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
 
 /*# sourceMappingURL=style.css.map */
