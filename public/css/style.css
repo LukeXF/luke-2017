@@ -82,6 +82,10 @@ a {
 .tile {
   background: white;
   padding: 30px 20px; }
+  .tile .btl {
+    text-align: center;
+    display: block;
+    color: #666; }
   .tile.tile-intro img {
     max-height: 100px;
     margin: auto auto; }

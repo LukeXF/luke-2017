@@ -125,6 +125,12 @@ a {
 	@extend .shadow;
 	padding: 30px 20px;
 
+	.btl {
+		text-align: center;
+		display: block;
+		color: #666;
+	}
+
 	&.tile-intro {
 		img {
 			max-height: 100px;

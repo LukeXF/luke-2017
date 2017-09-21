@@ -4,7 +4,7 @@ var sites = require('../sites.json');
 
 /* GET home page. */
 router.get('/', function (req, res) {
-	res.render('index', {title: 'Home', layout: false});
+	res.render('index', {title: 'Home', layout: false, sites: sites});
 });
 
 router.get('/about', function (req, res) {

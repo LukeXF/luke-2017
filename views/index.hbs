@@ -35,7 +35,7 @@
 		<div class="rows">
 			<div class="col-md-4">
 				<div class="tile tile-intro">
-					<img class="img-responsive" src="images/logo.png">
+					<i class="btl bt-code bt-5x"></i>
 					<h2>What I do</h2>
 					<p>
 						I build mobile first, responsive websites and dashboards that are modern by handling all aspects
@@ -46,7 +46,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="tile tile-intro">
-					<img class="img-responsive" src="images/logo.png">
+					<i class="btl bt-sitemap bt-5x"></i>
 					<h2>In safe hands</h2>
 					<p>
 						With over half of decade of experience on my own across over 100 projects and another 30 years
@@ -57,7 +57,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="tile tile-intro">
-					<img class="img-responsive" src="images/logo.png">
+					<i class="btl bt-trophy bt-5x"></i>
 					<h2>The end results</h2>
 					<p>
 						All my client leave with professional and reliable websites that really do help make their
@@ -66,6 +66,61 @@
 					<a href="portfolio" class="btn btn-luke">View my work</a>
 				</div>
 			</div>
+		</div>
+	</div>
+</div>
+
+
+<style>
+	.bg-{{sites.0.img}} {
+		background: url(images/websites/{{sites.0.img}}.jpg) center #585858;
+		background-size: 105%;
+	}
+
+	.fg-{{sites.0.img}} {
+		background: url(images/websites/{{sites.0.img}}.png) center;
+		background-size: cover;
+	}
+
+	.bg-{{sites.1.img}} {
+		background: url(images/websites/{{sites.1.img}}.jpg) center #585858;
+		background-size: 105%;
+	}
+
+	.fg-{{sites.1.img}} {
+		background: url(images/websites/{{sites.1.img}}.png) center;
+		background-size: cover;
+	}
+</style>
+
+<div class="bg-white">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-4 col-md-offset-4">
+				<h2 class="title">Most recent work</h2>
+				<hr>
+			</div>
+
+			<div class="col-md-6">
+				<div class="tile website bg-{{sites.0.img}}">
+					<div class="website-fg fg-{{sites.0.img}}">
+					</div>
+					<div class="tile-title">
+						<p> {{sites.0.name}} </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="tile website bg-{{sites.1.img}}">
+					<div class="website-fg fg-{{sites.1.img}}">
+					</div>
+					<div class="tile-title">
+						<p> {{sites.1.name}} </p>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</div>
 </div>
