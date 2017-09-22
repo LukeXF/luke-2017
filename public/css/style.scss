@@ -129,6 +129,7 @@ a {
 	background: white;
 	@extend .shadow;
 	padding: 30px 20px;
+	margin-bottom: 20px;
 
 	.btl {
 		text-align: center;
@@ -193,13 +194,12 @@ a {
 	text-align: center;
 	color: white;
 	display: table;
+	border-radius: 0;
 
 	&:hover {
 		margin: 0 auto;
 		width: 194px;
-		/* height: 35px; */
 		color: tan;
-		border-left: 3px solid tan;
 		border-left: 3px solid tan;
 		border-right: 3px solid #beb1a6;
 		-webkit-box-sizing: border-box;
@@ -214,13 +214,12 @@ a {
 		background-image: -moz-linear-gradient(left, tan 0%, #beb1a6 100%), -moz-linear-gradient(left, tan 0%, #beb1a6 100%);
 		background-image: -o-linear-gradient(left, tan 0%, #beb1a6 100%), -o-linear-gradient(left, tan 0%, #beb1a6 100%);
 		background-image: linear-gradient(to right, tan 0%, #beb1a6 100%), linear-gradient(to right, tan 0%, #beb1a6 100%);
+		border-radius: 4px;
 	}
 }
 
 .how-i-got-here {
 	.col-md-2 {
-		width: 20%;
-
 		img {
 			width: 100%;
 			max-width: 100px;
@@ -248,7 +247,6 @@ a {
 
 .my-style {
 	.col-md-2 {
-		width: 20%;
 
 		img {
 			width: 100%;
@@ -300,6 +298,7 @@ a {
 			padding: 0 30px;
 			display: inline;
 			line-height: 27px;
+			white-space: pre;
 
 			@extend .background-text;
 		}
@@ -576,7 +575,7 @@ a {
 	#quote-carousel .carousel-indicators {
 		right: 50%;
 		top: auto;
-		bottom: -14px;
+		bottom: 5px;
 		margin-right: -19px;
 	}
 	#quote-carousel .carousel-indicators li {
@@ -633,6 +632,104 @@ a {
 		small {
 			font-weight: bold;
 			font-size: 14px;
+		}
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+	.how-i-got-here {
+		.col-md-2 {
+			width: 20%;
+		}
+	}
+
+	.my-style {
+		.col-md-2 {
+			width: 20%;
+		}
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+	.what_i_am {
+		.cd-intro {
+			margin: 10px auto 20px;
+			h1 {
+				font-size: 20px;
+			}
+		}
+	}
+
+	.website {
+		.website-fg {
+			min-width: 100%;
+			min-height: 200px;
+			padding: 20px;
+		}
+	}
+
+	.feedback {
+		.carousel-inner {
+			min-height: 470px;
+
+			.item p {
+				font-size: 18px;
+			}
+		}
+		#quote-carousel .carousel-indicators {
+			bottom: 5px;
+		}
+	}
+
+	.footer {
+		padding: 20px;
+		img {
+			margin: auto;
+			max-height: 80px;
+		}
+	}
+
+	.page-intro .sub-title p {
+		padding: 0 15px;
+	}
+
+	.how-i-got-here > div {
+		margin: 20px auto;
+	}
+
+	.my-skillset, .my-skillset > div h4, .my-skillset > div h6 {
+		text-align: center;
+	}
+
+	.my-skillset .row {
+		margin: 40px -15px;
+	}
+
+	.navbar {
+
+		.navbar-brand {
+			height: 70px;
+			padding: 7.5px;
+
+			img {
+				max-height: 50px;
+				margin: 3px 5px;
+			}
+		}
+
+		.navbar-toggle {
+			padding: 10px;
+			margin: 15px;
+		}
+
+		.navbar-nav {
+			li {
+				a {
+					padding: 15px 30px;
+				}
+			}
 		}
 	}
 }
