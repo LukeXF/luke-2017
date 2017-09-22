@@ -1,0 +1,44 @@
+[
+	{
+		"name": "Element Softworks",
+		"img": "elementsoftworks",
+		"bg-img": 2,
+		"link": "http://elementsoftworks.co.uk",
+		"text": "See the work my company does on our website."
+	},
+	{
+		"name": "Code Canyon",
+		"img": "codecanyon",
+		"bg-img": 5,
+		"link": "https://codecanyon.net/user/elementsoftworks",
+		"text": "I sell software and scripts through the Envato Market."
+	},
+	{
+		"name": "Loom",
+		"img": "loom",
+		"bg-img": 4,
+		"link": "https://www.loom.co/profile/9864/",
+		"text": "I offer my skills for projects on Loom."
+	},
+	{
+		"name": "Upwork",
+		"img": "upwork",
+		"bg-img": 12,
+		"link": "https://www.upwork.com/fl/lukexf",
+		"text": "I also offer my skills for projects on UpWork."
+	},
+	{
+		"name": "GitHub",
+		"img": "github",
+		"bg-img": 6,
+		"link": "https://github.com/lukexf",
+		"text": "View my public projects (code) on GitHub."
+	},
+	{
+		"name": "Code Pen",
+		"img": "codepen",
+		"bg-img": 11,
+		"link": "https://codepen.io/LukeXF/",
+		"text": "See my coded design tests on CodePen."
+	}
+]

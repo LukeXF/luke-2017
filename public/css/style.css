@@ -20,9 +20,11 @@ a {
     font-weight: bold;
     text-transform: uppercase;
     color: #222; }
+    .navbar .navbar-nav li a:hover {
+      color: tan; }
   .navbar .navbar-nav li.active a, .navbar .navbar-nav li.active a:focus, .navbar .navbar-nav li.active a:hover {
     background-color: transparent;
-    color: #0aa9d4; }
+    color: #d29600; }
   .navbar .navbar-brand {
     height: 80px;
     padding: 7.5px; }
@@ -99,7 +101,7 @@ a {
     font-size: 17px;
     font-weight: 300; }
 
-.animate, a, .website, .website .website-fg {
+.animate, a, .navbar .navbar-nav li a, .website, .website .website-fg, .other-places .poly-bg-1 .poly, .other-places .poly-bg-1 .poly img, .other-places .poly-bg-2 .poly, .other-places .poly-bg-2 .poly img, .other-places .poly-bg-3 .poly, .other-places .poly-bg-3 .poly img, .other-places .poly-bg-4 .poly, .other-places .poly-bg-4 .poly img, .other-places .poly-bg-5 .poly, .other-places .poly-bg-5 .poly img, .other-places .poly-bg-6 .poly, .other-places .poly-bg-6 .poly img, .other-places .poly-bg-7 .poly, .other-places .poly-bg-7 .poly img, .other-places .poly-bg-8 .poly, .other-places .poly-bg-8 .poly img, .other-places .poly-bg-9 .poly, .other-places .poly-bg-9 .poly img, .other-places .poly-bg-10 .poly, .other-places .poly-bg-10 .poly img, .other-places .poly-bg-11 .poly, .other-places .poly-bg-11 .poly img, .other-places .poly-bg-12 .poly, .other-places .poly-bg-12 .poly img, .feedback #quote-carousel .carousel-indicators li, .feedback #quote-carousel .carousel-indicators li img, .feedback #quote-carousel .carousel-indicators .active, .feedback #quote-carousel .carousel-indicators .active img {
   -webkit-transition: all 0.3s !important;
   -moz-transition: all 0.3s !important;
   -ms-transition: all 0.3s !important;
@@ -200,7 +202,6 @@ a {
 
 .page-intro .title {
   font-size: 40px; }
-
 .page-intro .sub-title {
   text-align: center;
   background-color: white;
@@ -214,7 +215,6 @@ a {
     padding: 0 30px;
     display: inline;
     line-height: 27px; }
-
 .page-intro p.big {
   text-align: center;
   font-size: 18px;
@@ -228,13 +228,11 @@ a {
   border: 5px solid #f7f7f7;
   margin: auto;
   margin-bottom: 25px; }
-
 .my-skillset > div h4 {
   font-weight: bold;
   font-size: 17px;
   margin: 25px auto 5px;
   text-align: left; }
-
 .my-skillset > div h6 {
   margin: 0 auto 5px;
   padding-bottom: 9px;
@@ -261,28 +259,23 @@ a {
   .costs .col-md-4 .stars.stars-gold {
     background: #ffb72c;
     border-color: #E8A216; }
-
 .costs .col-md-4 img {
   width: 100%;
   border-radius: 5px;
   border: 5px solid #c2c2c2;
   margin: auto; }
-
 .costs .col-md-4 h4 {
   font-weight: bold;
   font-size: 17px;
   margin: 10px auto 5px; }
-
 .costs .col-md-4 h6 {
   margin: 0 auto 5px;
   border-bottom: 1px solid #eee;
   color: #a9a9a9;
   padding-bottom: 20px;
   margin-bottom: 20px; }
-
 .costs .col-md-4 p {
   text-align: center; }
-
 .costs .col-md-4 ul {
   min-height: 120px; }
 
@@ -339,5 +332,169 @@ a {
       background: linear-gradient(left, tan, #beb1a6);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
+
+.other-places .poly-bg-1 .poly {
+  background: url("../images/poly/1.jpg") center #e3e5e4;
+  background-size: 130%;
+  min-height: 64px; }
+.other-places .poly-bg-1 .tile:hover .poly {
+  background-size: 100%; }
+  .other-places .poly-bg-1 .tile:hover .poly img {
+    transform: scale(1.05); }
+.other-places .poly-bg-2 .poly {
+  background: url("../images/poly/2.jpg") center #9e5367;
+  background-size: 130%;
+  min-height: 64px; }
+.other-places .poly-bg-2 .tile:hover .poly {
+  background-size: 100%; }
+  .other-places .poly-bg-2 .tile:hover .poly img {
+    transform: scale(1.05); }
+.other-places .poly-bg-3 .poly {
+  background: url("../images/poly/3.jpg") center #e3e5e4;
+  background-size: 130%;
+  min-height: 64px; }
+.other-places .poly-bg-3 .tile:hover .poly {
+  background-size: 100%; }
+  .other-places .poly-bg-3 .tile:hover .poly img {
+    transform: scale(1.05); }
+.other-places .poly-bg-4 .poly {
+  background: url("../images/poly/4.jpg") center #5c5f64;
+  background-size: 130%;
+  min-height: 64px; }
+.other-places .poly-bg-4 .tile:hover .poly {
+  background-size: 100%; }
+  .other-places .poly-bg-4 .tile:hover .poly img {
+    transform: scale(1.05); }
+.other-places .poly-bg-5 .poly {
+  background: url("../images/poly/5.jpg") center #e3e5e4;
+  background-size: 130%;
+  min-height: 64px; }
+.other-places .poly-bg-5 .tile:hover .poly {
+  background-size: 100%; }
+  .other-places .poly-bg-5 .tile:hover .poly img {
+    transform: scale(1.05); }
+.other-places .poly-bg-6 .poly {
+  background: url("../images/poly/6.jpg") center #bac96b;
+  background-size: 130%;
+  min-height: 64px; }
+.other-places .poly-bg-6 .tile:hover .poly {
+  background-size: 100%; }
+  .other-places .poly-bg-6 .tile:hover .poly img {
+    transform: scale(1.05); }
+.other-places .poly-bg-7 .poly {
+  background: url("../images/poly/7.jpg") center #e3e5e4;
+  background-size: 130%;
+  min-height: 64px; }
+.other-places .poly-bg-7 .tile:hover .poly {
+  background-size: 100%; }
+  .other-places .poly-bg-7 .tile:hover .poly img {
+    transform: scale(1.05); }
+.other-places .poly-bg-8 .poly {
+  background: url("../images/poly/8.jpg") center #e3e5e4;
+  background-size: 130%;
+  min-height: 64px; }
+.other-places .poly-bg-8 .tile:hover .poly {
+  background-size: 100%; }
+  .other-places .poly-bg-8 .tile:hover .poly img {
+    transform: scale(1.05); }
+.other-places .poly-bg-9 .poly {
+  background: url("../images/poly/9.jpg") center #e3e5e4;
+  background-size: 130%;
+  min-height: 64px; }
+.other-places .poly-bg-9 .tile:hover .poly {
+  background-size: 100%; }
+  .other-places .poly-bg-9 .tile:hover .poly img {
+    transform: scale(1.05); }
+.other-places .poly-bg-10 .poly {
+  background: url("../images/poly/10.jpg") center #e3e5e4;
+  background-size: 130%;
+  min-height: 64px; }
+.other-places .poly-bg-10 .tile:hover .poly {
+  background-size: 100%; }
+  .other-places .poly-bg-10 .tile:hover .poly img {
+    transform: scale(1.05); }
+.other-places .poly-bg-11 .poly {
+  background: url("../images/poly/11.jpg") center #b4556b;
+  background-size: 130%;
+  min-height: 64px; }
+.other-places .poly-bg-11 .tile:hover .poly {
+  background-size: 100%; }
+  .other-places .poly-bg-11 .tile:hover .poly img {
+    transform: scale(1.05); }
+.other-places .poly-bg-12 .poly {
+  background: url("../images/poly/12.jpg") center #e6cb9e;
+  background-size: 130%;
+  min-height: 64px; }
+.other-places .poly-bg-12 .tile:hover .poly {
+  background-size: 100%; }
+  .other-places .poly-bg-12 .tile:hover .poly img {
+    transform: scale(1.05); }
+.other-places .tile {
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: 20px; }
+  .other-places .tile .row {
+    margin: 0; }
+  .other-places .tile [class*='col-'] {
+    padding: 0; }
+  .other-places .tile img {
+    padding: 10px 20px; }
+  .other-places .tile p {
+    margin-bottom: 0;
+    padding: 12px 20px;
+    font-weight: 300; }
+
+.feedback #quote-carousel {
+  padding: 0 10px 30px 10px; }
+.feedback #quote-carousel .carousel-control {
+  background: none;
+  color: #CACACA;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px; }
+.feedback #quote-carousel .carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: -14px;
+  margin-right: -19px; }
+.feedback #quote-carousel .carousel-indicators li {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  cursor: pointer;
+  border: 4px solid #CCC;
+  border-radius: 50px;
+  overflow: hidden;
+  transition: all 0.4s;
+  background: white; }
+  .feedback #quote-carousel .carousel-indicators li img {
+    opacity: 0.4; }
+  .feedback #quote-carousel .carousel-indicators li:hover {
+    border-color: tan; }
+    .feedback #quote-carousel .carousel-indicators li:hover img {
+      opacity: 0.6; }
+.feedback #quote-carousel .carousel-indicators .active {
+  background: #333333;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  border-color: #d29600;
+  overflow: hidden; }
+  .feedback #quote-carousel .carousel-indicators .active img {
+    opacity: 1; }
+  .feedback #quote-carousel .carousel-indicators .active:hover {
+    opacity: 1;
+    border-color: #d29600;
+    cursor: default; }
+.feedback .carousel-inner {
+  min-height: 170px; }
+.feedback .item blockquote {
+  border-left: none;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 300; }
+  .feedback .item blockquote small {
+    font-weight: bold;
+    font-size: 14px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,10 +1,12 @@
 var express = require('express');
 var router = express.Router();
-var sites = require('../sites.json');
+var sites = require('../data/sites.json');
+var other = require('../data/sites-other.json');
+var feedback = require('../data/feedback.json');
 
 /* GET home page. */
 router.get('/', function (req, res) {
-	res.render('index', {title: 'Home', layout: false, sites: sites});
+	res.render('index', {title: 'Home', layout: false, sites: sites, feedback: feedback});
 });
 
 router.get('/about', function (req, res) {
@@ -12,7 +14,7 @@ router.get('/about', function (req, res) {
 });
 
 router.get('/portfolio', function (req, res) {
-	res.render('portfolio', {title: 'Portfolio', sites: sites});
+	res.render('portfolio', {title: 'Portfolio', sites: sites, other: other});
 });
 
 router.get('/pricing', function (req, res) {

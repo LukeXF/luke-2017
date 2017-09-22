@@ -30,12 +30,17 @@ a {
 				font-weight: bold;
 				text-transform: uppercase;
 				color: #222;
+				@extend .animate;
+
+				&:hover {
+					color: tan;
+				}
 			}
 
 			&.active {
 				a, a:focus, a:hover {
 					background-color: transparent;
-					color: #0aa9d4;
+					color: #d29600;
 				}
 			}
 		}
@@ -338,6 +343,7 @@ a {
 	}
 }
 
+// for the pricing table
 .costs {
 	.col-md-4 {
 
@@ -394,6 +400,7 @@ a {
 	}
 }
 
+// contact form on the pricing page
 #contact_form {
 	padding: 20px 30px 50px;
 
@@ -411,6 +418,7 @@ a {
 	}
 }
 
+// website tile
 .website {
 	position: relative;
 	min-height: 200px;
@@ -466,4 +474,165 @@ a {
 		}
 	}
 
+}
+
+// for portfolio at the bottom
+.other-places {
+
+	@mixin border-radius($radius, $backup) {
+
+		.poly {
+			background: url("../images/poly/" + $radius + ".jpg") center $backup;
+			background-size: 130%;
+			min-height: 64px;
+			@extend .animate;
+			img {
+				@extend .animate;
+			}
+		}
+
+		.tile:hover .poly {
+			background-size: 100%;
+
+			img {
+				transform: scale(1.05);
+			}
+		}
+	}
+
+	.poly-bg-1 {
+		@include border-radius(1, #e3e5e4); // fallback colour
+	}
+	.poly-bg-2 {
+		@include border-radius(2, #9e5367);
+	}
+	.poly-bg-3 {
+		@include border-radius(3, #e3e5e4); // fallback colour
+	}
+	.poly-bg-4 {
+		@include border-radius(4, #5c5f64);
+	}
+	.poly-bg-5 {
+		@include border-radius(5, #e3e5e4); // fallback colour
+	}
+	.poly-bg-6 {
+		@include border-radius(6, #bac96b);
+	}
+	.poly-bg-7 {
+		@include border-radius(7, #e3e5e4); // fallback colour
+	}
+	.poly-bg-8 {
+		@include border-radius(8, #e3e5e4); // fallback colour
+	}
+	.poly-bg-9 {
+		@include border-radius(9, #e3e5e4); // fallback colour
+	}
+	.poly-bg-10 {
+		@include border-radius(10, #e3e5e4); // fallback colour
+	}
+	.poly-bg-11 {
+		@include border-radius(11, #b4556b);
+	}
+	.poly-bg-12 {
+		@include border-radius(12, #e6cb9e);
+	}
+
+	.tile {
+		padding: 0;
+		cursor: pointer;
+		margin-bottom: 20px;
+
+		.row {
+			margin: 0;
+		}
+		[class*='col-'] {
+			padding: 0;
+		}
+		img {
+			padding: 10px 20px;
+		}
+		p {
+			margin-bottom: 0;
+			padding: 12px 20px;
+			font-weight: 300;
+
+		}
+	}
+}
+
+.feedback {
+
+	#quote-carousel {
+		padding: 0 10px 30px 10px;
+	}
+	#quote-carousel .carousel-control {
+		background: none;
+		color: #CACACA;
+		font-size: 2.3em;
+		text-shadow: none;
+		margin-top: 30px;
+	}
+
+	#quote-carousel .carousel-indicators {
+		right: 50%;
+		top: auto;
+		bottom: -14px;
+		margin-right: -19px;
+	}
+	#quote-carousel .carousel-indicators li {
+		width: 50px;
+		height: 50px;
+		margin: 5px;
+		cursor: pointer;
+		border: 4px solid #CCC;
+		border-radius: 50px;
+		overflow: hidden;
+		transition: all 0.4s;
+		background: white;
+		@extend .animate;
+
+		img {
+			opacity: 0.4;
+			@extend .animate;
+		}
+		&:hover {
+			border-color: tan;
+
+			img {
+				opacity: 0.6;
+			}
+		}
+	}
+	#quote-carousel .carousel-indicators .active {
+		background: #333333;
+		width: 50px;
+		height: 50px;
+		border-radius: 100px;
+		border-color: #d29600;
+		overflow: hidden;
+		@extend .animate;
+		img {
+			opacity: 1;
+			@extend .animate;
+		}
+		&:hover {
+			opacity: 1;
+			border-color: #d29600;
+			cursor: default;
+		}
+	}
+	.carousel-inner {
+		min-height: 170px;
+	}
+	.item blockquote {
+		border-left: none;
+		margin: 0;
+		font-size: 20px;
+		font-weight: 300;
+
+		small {
+			font-weight: bold;
+			font-size: 14px;
+		}
+	}
 }
