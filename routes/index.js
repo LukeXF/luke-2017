@@ -17,6 +17,10 @@ router.get('/portfolio', function (req, res) {
 	res.render('portfolio', {title: 'Portfolio', sites: sites, other: other});
 });
 
+router.get('/portfolio/:project', function (req, res) {
+	res.render('project', {title: 'P', sites: sites, other: other});
+});
+
 router.get('/pricing', function (req, res) {
 	res.render('pricing', {title: 'Pricing'});
 });
