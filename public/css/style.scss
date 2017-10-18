@@ -428,13 +428,14 @@ a {
 
 	.website-fg {
 		min-width: 100%;
-		min-height: 310px;
+		min-height: 300px;
 		padding: 20px;
 		@extend .animate;
 	}
 
 	&:hover {
 		background-size: 100%;
+		cursor: pointer;
 		.website-fg {
 			transform: scale(1.05);
 		}
@@ -732,4 +733,40 @@ a {
 			}
 		}
 	}
+}
+
+
+// modal
+.modal-backdrop.in {
+	z-index: auto;
+}
+
+.modal-content {
+	border-radius: 2px;
+
+	.modal-title {
+		font-weight: bold;
+		color: tan;
+		letter-spacing: 3px;
+	}
+
+	.modal-body {
+		.website-fg {
+			height: 235px;
+		}
+		.modal-text {
+			padding: 20px 20px;
+			max-height: 235px;
+			overflow: auto;
+		}
+	}
+}
+
+// bootstrap 3 fallback
+.m-0 {
+	margin: 0;
+}
+
+.p-0 {
+	padding: 0;
 }

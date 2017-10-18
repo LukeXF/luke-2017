@@ -1,48 +1,48 @@
 <div class="bg-grey">
 	<div class="container">
 		<div class="row page-intro">
-			<div class="col-md-8 col-md-offset-2">
-				<h1 class="title">Project</h1>
+			<div class="col-md-10 col-md-offset-1">
+				<h1 class="title">{{project.name}}</h1>
 				<div class="sub-title">
-					<p>A collection of my past work</p>
+					<p>{{project.subtitle}}</p>
 				</div>
-				<p class="big">
-					-
-				</p>
+				{{#if project.link}}
+					{{#each project.text}}
+						<p class="big">{{this}}</p>
+					{{/each}}
+				{{else}}
+					<p class="big">Description coming soon.</p>
+				{{/if}}
 			</div>
 		</div>
 	</div>
 </div>
 
 <style>
-		{{#each sites}}
-		.bg-{{this.img}} {
-			background: url(images/websites/{{this.img}}.jpg) center #585858;
-			background-size: 105%;
-		}
+	.bg-{{project.img}} {
+		background: url(../images/websites/{{project.img}}.jpg) center #585858;
+		background-size: 105%;
+	}
 
-		.fg-{{this.img}} {
-			background: url(images/websites/{{this.img}}.png) center;
-			background-size: cover;
-		}
-		{{/each}}
+	.fg-{{project.img}} {
+		background: url(../images/websites/{{project.img}}.png) center;
+		background-size: cover;
+	}
 </style>
 
 <div class="bg-white">
 	<div class="container">
 		<div class="row">
 
-			{{#each sites}}
-				<div class="col-md-6">
-					<div class="tile website bg-{{this.img}}">
-						<div class="website-fg fg-{{this.img}}">
-						</div>
-						<div class="tile-title">
-							<p> {{this.name}} </p>
-						</div>
+			<div class="col-md-6 col-md-offset-3">
+				<div class="tile website bg-{{project.img}}">
+					<div class="website-fg fg-{{project.img}}">
+					</div>
+					<div class="tile-title">
+						<p> {{project.name}} </p>
 					</div>
 				</div>
-			{{/each}}
+			</div>
 
 		</div>
 	</div>

@@ -1,27 +1,56 @@
 [
 	{
 		"name": "Pricing Tables",
-		"img": "pricingtables"
+		"img": "pricingtables",
+		"subtitle": "A flat and modern HTML/CSS pack",
+		"link": "https://codecanyon.net/item/7-responsive-flat-bootstrap-pricing-tables-now-with-color-picker/19502341",
+		"text": {
+			"0": "We’ve created an easy to use modular pricing tables project for you. Which is responsive, meaning it works on mobile, tablets, laptops and computers. Perfect to quickly put on your website and start selling. Our clean, flat designs help your clients easily find out the key information of your products. Build in HTML and SCSS, our tables are written with performance and easy of use in mind. Feel free to change them up or easily place the CSS file onto your project along with the pricing table.",
+			"1": "Purchase now to receive free updates in the future which include more CSS versions and jQuery versions, as well as support for Bootstrap 4 coming later this year."
+		}
 	},
 	{
 		"name": "WS Training",
-		"img": "wstraining"
+		"img": "wstraining",
+		"subtitle": "A clean website overall for a large apprenticeship company"
 	},
 	{
 		"name": "Hot Brass Media",
-		"img": "hotbrassmedia"
+		"img": "hotbrassmedia",
+		"subtitle": "A dark, stylish design for an American advertising agency",
+		"link": "http://hotbrassmedia.com",
+		"text": {
+			"0": "My client in the firearms and advertising industries was looking for a slick dark theme to match his business outfit.",
+			"1": "I build a responsive and very clean website for him which showcase his skill sets and success stories.",
+			"2": "They regularly receive work through the website as a direct result of the 21st century website I made for them."
+		}
 	},
 	{
 		"name": "West End Leasing",
-		"img": "westendleasing"
+		"img": "westendleasing",
+		"subtitle": "A responsive portfolio for a local leasing company"
 	},
 	{
 		"name": "Premier Gun Club",
-		"img": "premiergunclub"
+		"img": "premiergunclub",
+		"subtitle": "A e-commerce platform for firearm accounts on Instagram",
+		"link": "https://premiergunclub.com",
+		"text": {
+			"0": "My client wanted an strongly designed e-commerce website that they could regularly edit and change.",
+			"1": "I used PHP to build a WordPress theme overlaid onto a WordPress server I created for them running WooCommerce. It was my responsibility to develop and deploy all the custom plugins and designs to make their site work flawlessly with over a 1000 active members using the site.",
+			"2": "As a result of the site been in place they have managed to direct their client away from social media to an actually website that they can call home. Through this they now have a store and host flash sales which brings in over $3,000 in the first hour a flash sale starts. Real work, real results."
+		}
 	},
 	{
 		"name": "IP/UA Lookup API",
-		"img": "ipua"
+		"img": "ipua",
+		"subtitle": "A user lookup tool build in PHP",
+		"link": "https://codecanyon.net/item/ip-and-user-agent-lookup-api-search-tool/16750113?s_rank=1",
+		"text": {
+			"0": "As requested by several clients and developers. They wanted a quick and easy to use API services to query their logged in users accessing their site to find out more information about them.",
+			"1": "This is a JSON API which pulls in GeoIP db to bring the country and I work out the User Agent, which is all provided with high resolution images served through the API.",
+			"2": "This tool hopefully saves developers at least an hour for each project they code in a login tracking system, all for an affordable low price sold through envato."
+		}
 	},
 	{
 		"name": "Black Wolf Inc",
@@ -29,6 +58,13 @@
 	},
 	{
 		"name": "Element Softworks",
-		"img": "elementsoftworks"
+		"img": "elementsoftworks",
+		"subtitle": "My own company's portfolio",
+		"link": "http://elementsoftworks.com",
+		"text": {
+			"0": "To power my company website I worked with my team to produce a modern and professional website to showcase our latest and greatest.",
+			"1": "This project was originally written in PHP but is currently undergoing a rewrite in Node along with making it fully responsive.",
+			"2": "We picked up an increase in 55% traffic from having this new clean design."
+		}
 	}
 ]

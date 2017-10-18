@@ -312,10 +312,11 @@ a {
   margin-bottom: 40px; }
   .website .website-fg {
     min-width: 100%;
-    min-height: 310px;
+    min-height: 300px;
     padding: 20px; }
   .website:hover {
-    background-size: 100%; }
+    background-size: 100%;
+    cursor: pointer; }
     .website:hover .website-fg {
       transform: scale(1.05); }
   .website .col-md-6 .website {
@@ -587,5 +588,27 @@ a {
     margin: 15px; }
   .navbar .navbar-nav li a {
     padding: 15px 30px; } }
+
+.modal-backdrop.in {
+  z-index: auto; }
+
+.modal-content {
+  border-radius: 2px; }
+  .modal-content .modal-title {
+    font-weight: bold;
+    color: tan;
+    letter-spacing: 3px; }
+  .modal-content .modal-body .website-fg {
+    height: 235px; }
+  .modal-content .modal-body .modal-text {
+    padding: 20px 20px;
+    max-height: 235px;
+    overflow: auto; }
+
+.m-0 {
+  margin: 0; }
+
+.p-0 {
+  padding: 0; }
 
 /*# sourceMappingURL=style.css.map */

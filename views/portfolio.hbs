@@ -38,7 +38,7 @@
 
 			{{#each sites}}
 				<div class="col-md-6">
-					<div class="tile website bg-{{this.img}}">
+					<div class="tile website bg-{{this.img}}" data-toggle="modal" data-target="#modal{{this.img}}">
 						<div class="website-fg fg-{{this.img}}">
 						</div>
 						<div class="tile-title">
@@ -46,6 +46,7 @@
 						</div>
 					</div>
 				</div>
+
 			{{/each}}
 
 		</div>
@@ -79,7 +80,52 @@
 						</div>
 					</a>
 				</div>
+
 			{{/each}}
 		</div>
 	</div>
 </div>
+
+
+
+{{#each sites}}
+
+	<div class="modal fade" id="modal{{this.img}}" tabindex="-1" role="dialog" aria-labelledby="modal{{this.img}}Lable">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">{{this.name}}</h4>
+				</div>
+				<div class="modal-body p-0">
+					<div class="row m-0">
+						<div class="col-md-6 p-0 bg-{{this.img}}">
+							<div class="website-fg fg-{{this.img}}"></div>
+						</div>
+						<div class="col-md-6 modal-text">
+							<b>{{this.subtitle}}</b>
+
+
+							{{#if this.link}}
+								{{#each this.text}}
+									<p>{{this}}</p>
+								{{/each}}
+							{{else}}
+								<p>Description coming soon.</p>
+							{{/if}}
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+					{{#if this.link}}
+						<a href="{{this.link}}" target="_blank" type="button" class="btn btn-primary">View Website</a>
+					{{/if}}
+				</div>
+			</div>
+		</div>
+	</div>
+{{/each}}
+

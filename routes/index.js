@@ -18,7 +18,10 @@ router.get('/portfolio', function (req, res) {
 });
 
 router.get('/portfolio/:project', function (req, res) {
-	res.render('project', {title: 'P', sites: sites, other: other});
+	console.log(req.params.project);
+	var picked = sites.find(o => o.img === req.params.project);
+	console.log('picked', picked);
+	res.render('project', {title: 'P', project: picked, other: other});
 });
 
 router.get('/pricing', function (req, res) {
